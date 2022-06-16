@@ -43,12 +43,13 @@
 			$bao_hanh = $_POST["bao_hanh"];
 			$ton_kho = $_POST["ton_kho"];
 			$category_id = $_POST["category_id"];
+			$image = $_POST["image"];
 			//lay bien ket noi
 			$conn = Connection::getInstance();
 			//update du lieu tuong ung voi id truyen vao
 			$conn->query("update products set  name='$name', ma_hang='$ma_hang', price='$price',
 			so_imei='$so_imei', so_serial='$so_serial', xuat_su='$xuat_su',
-			bao_hanh='$bao_hanh' ,ton_kho='$ton_kho', category_id='$category_id' where id=$id");
+			bao_hanh='$bao_hanh' ,ton_kho='$ton_kho', category_id='$category_id', image='$image' where id=$id");
 			//kiem tra xem user co chon anh de upload khong, neu co thi xoa anh cu, upload anh moi
 		}
 		//create bang ghi
@@ -62,12 +63,13 @@
 			$bao_hanh = $_POST["bao_hanh"];
 			$ton_kho = $_POST["ton_kho"];
 			$category_id = $_POST["category_id"];
+			$image = $_POST["image"];
 			//lay bien ket noi
 			$conn = Connection::getInstance();
 			
 			$conn->query("insert into products set name='$name', ma_hang='$ma_hang', price='$price',
 			so_imei='$so_imei', so_serial='$so_serial', xuat_su='$xuat_su',
-			bao_hanh='$bao_hanh' ,ton_kho='$ton_kho', category_id='$category_id'");
+			bao_hanh='$bao_hanh' ,ton_kho='$ton_kho', category_id='$category_id', image='$image'");
 
 		}
 		//xoa ban ghi

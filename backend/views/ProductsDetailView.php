@@ -47,6 +47,10 @@
                     <th style="width: 100px;">Loại sản phẩm</th>
                     <td><?php echo $data->category_name; ?></td>
                 </tr>
+                <tr>
+                    <th style="width: 100px;">Hình ảnh</th>
+                    <td><?php echo $data->image; ?></td>
+                </tr>
             </table>
             <!-- /thong tin -->      
         </div>

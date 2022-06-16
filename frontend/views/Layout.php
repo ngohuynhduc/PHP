@@ -28,7 +28,7 @@
         <nav class="sidebar">
       <div class="sidebar-header">
         <a href="index.php?controller=home" class="sidebar-brand">
-          Nhóm 13
+        TheGioiDiDong
         </a>
         <div class="sidebar-toggler not-active">
           <span></span>

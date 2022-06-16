@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-md-8 pl-md-0">
                   <div class="auth-form-wrapper px-4 py-5">
-                    <a href="#" class="noble-ui-logo d-block mb-2">Nhom 13</a>
+                    <a href="#" class="noble-ui-logo d-block mb-2">TheGioiDiDong</a>
                     <h5 class="text-muted font-weight-normal mb-4">Đăng ký.</h5>
                     <form class="forms-sample" method="post" action="index.php?controller=login&action=registerPost">
                       <div class="form-group">

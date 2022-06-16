@@ -30,12 +30,12 @@
 							<div class="row">
                 <div class="col-md-4 pr-md-0">
                   <div class="auth-left-wrapper">
-                  	<img style="width: 100%; height: 460px;" src="../assets/backend/images/tzu.jpg">
+                  	<img style="width: 100%; height: 460px;" src="../assets/backend/images/iphone-11-pro-max-green-600x600.jpg">
                   </div>
                 </div>
                 <div class="col-md-8 pl-md-0">
                   <div class="auth-form-wrapper px-4 py-5">
-                    <a href="#" class="noble-ui-logo d-block mb-2">Project Nhóm 13</a>
+                    <a href="#" class="noble-ui-logo d-block mb-2">TheGioiDiDong</a>
                     <h5 class="text-muted font-weight-normal mb-4">Đăng nhập</h5>
                     <form class="forms-sample" method="post" action="index.php?controller=login&action=login">
                       <div class="form-group">

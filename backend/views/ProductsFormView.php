@@ -69,6 +69,12 @@
                         <input type="number" value="<?php echo isset($record->ton_kho) ? $record->ton_kho:''; ?>" name="ton_kho" class="form-control" required>
                     </div>
                 </div>
+                <div class="row" style="margin-top:20px;">
+                    <div class="col-md-2">Hình ảnh</div>
+                    <div class="col-md-10">
+                        <input type="text" value="<?php echo isset($record->image) ? $record->image:''; ?>" name="image" class="form-control" required>
+                    </div>
+                </div>
                 <!-- end rows --> 
                 <!-- rows -->
                 <div class="row" style="margin-top:20px;">

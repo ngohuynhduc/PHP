@@ -5,7 +5,7 @@
         style="width: 200px; margin-right: 10px"/>
         <input class="form-control" type="text" name="nhomSp" placeholder="Tìm kiếm nhóm sản phẩm" aria-label="Search"
         style="width: 200px; margin-right: 10px" />
-        <input type="submit" value="tra cứu sản phẩm" class="btn btn-primary" />
+        <input type="submit" value="Tra cứu sản phẩm" class="btn btn-primary" />
     </form>
     <div class="col-md-12">
                 <style type="text/css">
