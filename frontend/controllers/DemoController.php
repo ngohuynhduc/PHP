@@ -14,7 +14,7 @@
 		//hien thi danh sach cac ban ghi co phan trang
 		public function index(){
 			//dinh nghia so ban ghi tren mot trang
-			$recordPerPage = 25;
+			$recordPerPage = 9;
 			//tinh tong so trang
 			$numPage = ceil($this->totalRecord($recordPerPage)/$recordPerPage);
 			//lay du lieu tu model

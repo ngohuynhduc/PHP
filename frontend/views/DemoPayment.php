@@ -1,7 +1,7 @@
 <!-- load file layout chung -->
 <?php $this->layoutPath = "Layout.php"; ?>
 <div class="col-md-12">
-    <div style="margin-bottom:5px;">
+    <div style="margin-bottom:5px; padding-top: 100px">
         <input onclick="history.go(-1);" type="button" value="Back" class="btn btn-danger">
     </div>    
     <div class="col-md-12 grid-margin stretch-card">

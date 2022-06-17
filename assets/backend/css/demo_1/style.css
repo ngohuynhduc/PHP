@@ -20243,8 +20243,8 @@ address p {
   .main-wrapper .page-wrapper {
     min-height: 100vh;
     background: #f9fafb;
-    width: calc(100% - 240px);
-    margin-left: 240px;
+    width: 100%;
+    /* margin-left: 240px; */
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
