@@ -108,36 +108,6 @@
 </head>
 
 <body>
-  <!-- <div class="main-wrapper"> -->
-
-  <!-- partial:partials/_sidebar.html -->
-  <!-- <nav class="sidebar">
-      <div class="sidebar-header">
-        <a href="index.php?controller=home" class="sidebar-brand">
-        TheGioiDiDong
-        </a>
-        <div class="sidebar-toggler not-active">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="sidebar-body">
-        <ul class="nav">
-        <li class="nav-item nav-category">Mua hàng</li>
-          <li class="nav-item">
-            <a href="index.php?controller=demo" class="nav-link no-active" >
-              <i class="link-icon" data-feather="box"></i>
-              <span class="link-title">Mua hàng</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav> -->
-  <!-- partial -->
-
-  <!-- <div class="page-wrapper">       -->
-  <!-- partial:partials/_navbar.html -->
   <div class="page-container">
     <nav class="navbar">
       <a href="#" class="sidebar-toggler">
@@ -158,7 +128,7 @@
           <a href="#">SẢN PHẨM</a>
           <a href="#">ABOUT US</a>
         </div>
-        <div style="float: right; margin-bottom: 5px; line-height:60px; margin-left:360px">
+        <div style="float: right; margin-bottom: 5px; line-height:60px; margin-left:160px">
           <a href="index.php?controller=demo&action=showCart" class="btn btn-primary">
             <h6>Giỏ hàng&nbsp; <i class="bi bi-cart"></i></h6>
           </a>
@@ -193,39 +163,7 @@
         </ul>
       </div>
     </nav>
-    <!-- <div class="banner">
-      <div class="banner-fill">
-
-      </div>
-      <div class="banner-slide">
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assets/backend/images/banner1.png" class="d-block w-100" height="750px" alt="banner-img">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/backend/images/banner2.jpg" class="d-block w-100" height="750px" alt="banner-img">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/backend/images/banner3.jpg" class="d-block w-100" height="750px" alt="banner-img">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div> -->
+    
   </div>
   <!-- partial -->
   <div class="page-content">
