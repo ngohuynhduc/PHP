@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ADMIN</title>
+  <title>TheGioiDiDong</title>
   <style>
     .page-container {}
 
@@ -41,6 +41,7 @@
     }
 
     .navbar-search {
+      margin-top: 10px;
       align-self: center;
       width: 30vw;
       height: 42px;
@@ -146,8 +147,11 @@
           <a href="index.php?controller=demo"><img src="../assets/backend/images/logo.png" width="100%" alt="logo"></a>
         </div>
         <div class="navigation">
-          <input type="text" name="search" placeholder="Search..." class="navbar-search" id="search">
+        <form method="post" action="index.php?controller=demo&action=search">
+          <input type="text" name="tenSp" aria-label="Search" placeholder="Search..." class="navbar-search" id="search">
+          
           <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
+          </form>
         </div>
         <div class="navbar-link">
           <a href="#">SẢN PHẨM</a>

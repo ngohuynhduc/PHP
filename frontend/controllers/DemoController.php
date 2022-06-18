@@ -29,7 +29,12 @@
 			//goi ham cartAdd tu model de them phan tu vao session array
 			$this->addToCartModel($id,$quantity);
 			//quay lai trang gio hang
-			header("location:index.php?controller=demo");
+			header("location:index.php?controller=demo");}
+		public function detail(){
+			$id = isset($_GET["id"]) ? $_GET["id"] : 0;
+			//goi ham tu model de update du lieu
+			$data = $this->modelGetRecord($id);
+			$this->loadView("DemoDetails.php",['data' => $data]);	
 		}
         public function showCart(){
             $this->loadView("DemoPayment.php");
@@ -45,6 +50,14 @@
 			$this->cartCheckOut($user->id, $tt);
 			$_SESSION["demoCart"] = array();
 			header("location:index.php?controller=demo");
+		}
+		public function search(){
+			//dinh nghia so ban ghi tren mot trang
+			$recordPerPage = 9;
+			//tinh tong so trang
+			$numPage = ceil($this->totalRecord($recordPerPage)/$recordPerPage);
+			$data = $this->modelSearchRecord($recordPerPage);
+			$this->loadView("DemoView.php",["data"=>$data, 'numPage' => $numPage]);
 		}
 	}
  ?>

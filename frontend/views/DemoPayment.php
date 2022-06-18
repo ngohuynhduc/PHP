@@ -1,11 +1,11 @@
 <!-- load file layout chung -->
 <?php $this->layoutPath = "Layout.php"; ?>
 <div class="col-md-12">
-    <div style="margin-bottom:5px; padding-top: 100px">
+    <div style="margin-bottom:5px; padding-top: 100px;">
         <input onclick="history.go(-1);" type="button" value="Back" class="btn btn-danger">
     </div>    
     <div class="col-md-12 grid-margin stretch-card">
-    <div class="card">
+    <div class="card" style="min-height: 40vh;">
         <div class="card-body">
         <h6 class="card-title">Detail order</h6>
         <div class="panel-body">

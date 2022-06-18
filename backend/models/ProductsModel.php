@@ -91,10 +91,10 @@
 			//lay tu ban ghi nao
 			$from = $p * $recordPerPage;
 			//---
-			$maSp = isset($_POST["maSp"]) ? $_POST["maSp"] : '';
+			$name = isset($_POST["maSp"]) ? $_POST["maSp"] : '';
 			$nhomSp = isset($_POST["nhomSp"]) ? $_POST["nhomSp"] : '';
 			$conn = Connection::getInstance();
-			$query = $conn->query("select products.* from products inner join categories on products.category_id = categories.id  where products.ma_hang like '%$maSp%' and categories.name like '%$nhomSp%' order by category_id desc limit $from,$recordPerPage");
+			$query = $conn->query("select products.* from products inner join categories on products.category_id = categories.id  where products.name like '%$name%' and categories.name like '%$nhomSp%' order by category_id desc limit $from,$recordPerPage");
 			$result = $query->fetchAll();
 			return $result;
 		}

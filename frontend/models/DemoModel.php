@@ -72,5 +72,25 @@
 			$conn->query("update ngan_sach set price = $ngan_sach_price  where id =$ngan_sach->id");
 			unset($_SESSION["demoCart"]);
 		}
+		public function modelGetRecord($id){
+			//lay bien ket noi
+			$conn = Connection::getInstance();
+			$query = $conn->query("select products.*, categories.name as category_name from products inner join categories on products.category_id = categories.id where products.id=$id");
+			//tra ve mot ban ghi
+			return $query->fetch();
+		}		
+		public function modelSearchRecord($recordPerPage){
+			//lay bien p truyen tu url
+			$p = isset($_GET["p"]) && is_numeric($_GET["p"]) && $_GET["p"] > 0 ? ($_GET["p"]-1) : 0;			
+			//lay tu ban ghi nao
+			$from = $p * $recordPerPage;
+			//---
+			$tenSP = isset($_POST["tenSP"]) ? $_POST["tenSP"] : '';
+			$nhomSp = isset($_POST["nhomSp"]) ? $_POST["nhomSp"] : '';
+			$conn = Connection::getInstance();
+			$query = $conn->query("select products.* from products inner join categories on products.category_id = categories.id  where products.name like '%$tenSP%' and categories.name like '%$nhomSp%' order by category_id desc limit $from,$recordPerPage");
+			$result = $query->fetchAll();
+			return $result;
+		}
 	}
  ?>

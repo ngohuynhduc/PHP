@@ -2,16 +2,18 @@
 <?php $this->layoutPath = "Layout.php" ?>
 <div>
     <style type="text/css">
-        .pagination-wrapper{
+        .pagination-wrapper {
             margin-top: 10px;
             display: flex;
             justify-content: center;
         }
-        .page-link{
+
+        .page-link {
             background-color: #ffce00;
             border-radius: 50%;
             color: #000000;
         }
+
         .pagination {
             padding: 0px;
             margin: 0px;
@@ -222,22 +224,31 @@
                         <div class="card" style="margin: 20px 30px;">
 
                             <div class="imgBox">
-                                <img src="<?php echo $rows->image; ?>" alt="mouse corsair" class="mouse">
+                                <a href="index.php?controller=demo&action=detail&id=<?php echo $rows->id ?>"><img src="<?php echo $rows->image; ?>" alt="mouse corsair" class="mouse"></a>
                             </div>
 
                             <div class="contentBox">
                                 <h3> <?php echo $rows->name; ?></h3>
                                 <input class="form-control input-number" value="1" min="1" max="<?php echo $rows->ton_kho ?>" id="quantity<?php echo $rows->id; ?>" type="number" style="width: 50px;margin-left: 10px;padding: 8px;">
                                 <h2 class="price"><?php echo number_format($rows->price); ?>đ</h2>
-                                <a class="buy" onclick="addToCart<?php echo $rows->id ?>()" href="">Mua ngay</a>&nbsp;
+                                <button class="buy" onclick="addToCart<?php echo $rows->id ?>()" href=""><?php if ($rows->ton_kho > 0) {
+                                                                                                                echo "Mua Ngay";
+                                                                                                            } else {
+                                                                                                                echo "Hết Hàng";
+                                                                                                            } ?> </button>&nbsp;
                             </div>
 
                         </div>
                         <script>
                             function addToCart<?php echo $rows->id ?>() {
-                                var quantity = document.getElementById('quantity<?php echo $rows->id; ?>').value;
-                                location.href = "index.php?controller=demo&action=addToCart&id=<?php echo $rows->id; ?>&quantity<?php echo $rows->id; ?>=" + quantity;
-                                alert("Sản phẩm đã được thêm vào giỏ hàng")
+                                let quantity = document.getElementById('quantity<?php echo $rows->id; ?>').value;
+                                let isOutStock = <?php echo $rows->ton_kho ?>;
+                                if (isOutStock > 0) {
+                                    location.href = "index.php?controller=demo&action=addToCart&id=<?php echo $rows->id; ?>&quantity<?php echo $rows->id; ?>=" + quantity;
+                                    alert("Sản phẩm đã được thêm vào giỏ hàng")
+                                } else {
+                                    alert("Sản phẩm hiện đang hết hàng, mong quý khách thông cảm!")
+                                }
                             }
                         </script>
                     <?php

@@ -1,7 +1,7 @@
 <!-- load file layout chung -->
 <?php $this->layoutPath = "Layout.php" ?>
     <form method="post" action="index.php?controller=products&action=search" class="active-cyan-4 input-search"  style="margin-left: 30px; margin-bottom: 10px; display:flex">
-        <input class="form-control" type="text" name="maSp" placeholder="Tìm kiếm mã sản phẩm" aria-label="Search" 
+        <input class="form-control" type="text" name="maSp" placeholder="Tìm kiếm tên sản phẩm" aria-label="Search" 
         style="width: 200px; margin-right: 10px"/>
         <input class="form-control" type="text" name="nhomSp" placeholder="Tìm kiếm nhóm sản phẩm" aria-label="Search"
         style="width: 200px; margin-right: 10px" />
