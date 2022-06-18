@@ -78,7 +78,8 @@
       width: 100px;
       background-color: red;
     }
-    .footer{
+
+    .footer {
       margin-top: 30px;
     }
   </style>
@@ -147,10 +148,10 @@
           <a href="index.php?controller=demo"><img src="../assets/backend/images/logo.png" width="100%" alt="logo"></a>
         </div>
         <div class="navigation">
-        <form method="post" action="index.php?controller=demo&action=search">
-          <input type="text" name="tenSp" aria-label="Search" placeholder="Search..." class="navbar-search" id="search">
-          
-          <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
+          <form method="post" action="index.php?controller=demo&action=search">
+            <input type="text" name="tenSP" aria-label="Search" placeholder="Search..." class="navbar-search" id="search">
+
+            <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
           </form>
         </div>
         <div class="navbar-link">
@@ -275,7 +276,7 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-            <i class="bi bi-phone-fill"></i>TheGioiDiDong
+              <i class="bi bi-phone-fill"></i>TheGioiDiDong
             </h6>
             <p>
               Cửa hàng điện thoại và máy tính hàng đầu Việt Nam
@@ -333,7 +334,7 @@
             </h6>
             <p><i class="bi bi-house-door-fill me-3"></i> Hà Nội, Việt Nam</p>
             <p>
-            <i class="bi bi-envelope-fill me-3"></i>
+              <i class="bi bi-envelope-fill me-3"></i>
               info@example.com
             </p>
             <p><i class="bi bi-telephone-fill me-3"></i> + 01 234 567 88</p>

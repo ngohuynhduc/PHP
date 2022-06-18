@@ -231,11 +231,12 @@
                                 <h3> <?php echo $rows->name; ?></h3>
                                 <input class="form-control input-number" value="1" min="1" max="<?php echo $rows->ton_kho ?>" id="quantity<?php echo $rows->id; ?>" type="number" style="width: 50px;margin-left: 10px;padding: 8px;">
                                 <h2 class="price"><?php echo number_format($rows->price); ?>đ</h2>
-                                <button class="buy" onclick="addToCart<?php echo $rows->id ?>()" href=""><?php if ($rows->ton_kho > 0) {
-                                                                                                                echo "Mua Ngay";
-                                                                                                            } else {
-                                                                                                                echo "Hết Hàng";
-                                                                                                            } ?> </button>&nbsp;
+                                <button class="buy" onclick="addToCart<?php echo $rows->id ?>()" href="">
+                                    <?php if ($rows->ton_kho > 0) {
+                                        echo "Mua Ngay";
+                                    } else {
+                                        echo "Hết Hàng";
+                                    } ?> </button>&nbsp;
                             </div>
 
                         </div>
@@ -257,6 +258,9 @@
                 </div>
 
             </div>
+            <?php
+                if(!isset($isSearch)): 
+            ?>
             <div class="pagination-wrapper">
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
@@ -266,6 +270,8 @@
                     </ul>
                 </nav>
             </div>
+            <?php endif; ?>
+           
         </div>
         <div class="contact-icon">
             <a href=""><img src="../assets/backend/images/twitter-png-5966.png" height="60px" width="60px" alt="twitter"></a>

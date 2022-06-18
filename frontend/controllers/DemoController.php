@@ -53,11 +53,18 @@
 		}
 		public function search(){
 			//dinh nghia so ban ghi tren mot trang
-			$recordPerPage = 9;
+			$recordPerPage = 100;
 			//tinh tong so trang
-			$numPage = ceil($this->totalRecord($recordPerPage)/$recordPerPage);
-			$data = $this->modelSearchRecord($recordPerPage);
-			$this->loadView("DemoView.php",["data"=>$data, 'numPage' => $numPage]);
+			if(isset($_POST["tenSP"])){
+				$isSearch = true;
+				$numPage = ceil($this->totalRecord($recordPerPage)/$recordPerPage);
+				$data = $this->modelSearchRecord($recordPerPage);
+				$this->loadView("DemoView.php",["data"=>$data, 'numPage' => $numPage, 'isSearch' => $isSearch]);
+			}
+			else {
+				var_dump("123");
+				die();
+			}
 		}
 	}
  ?>
